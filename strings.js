@@ -1,17 +1,17 @@
 function CheckInput()
 {
 
-    var firstName = document.getElementById("fname").value;
-    var LastName = document.getElementById("lname").value;
-    var Name = firstName +  " " + LastName;
-    var len = Name.length;
-    var number = document.getElementById("number").value;
-    var len2 = number.length;
-    if (len >20)
+    var firstName = document.getElementById("fname").value; // creates a string based on user input
+    var LastName = document.getElementById("lname").value;// creates a string based on user input
+    var Name = firstName +  " " + LastName; // combines fname and lname to one string
+    var len = Name.length; //checks the strings length
+    var number = document.getElementById("number").value;// creates a string based on user input
+    var len2 = number.length;//checks the strings length
+    if (len >20) //if name is over 20 letters it is invalid
     {
         document.getElementById("loginStatus").innerHTML = "Invalid name length";
     }
-    else if (len2 == 10)
+    else if (len2 == 10) //if number is 10 characters it is valid
     {
         document.getElementById("loginStatus").innerHTML =" Valid login!!!";
     }
